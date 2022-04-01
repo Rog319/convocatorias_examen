@@ -23,7 +23,22 @@ class _SideBarState extends State<SideBar> {
   Widget listaItems(BuildContext context, int index) {
     return ListTile(
       contentPadding: const EdgeInsets.all(10),
-      title: const Text('Convocatorias'),
+      title: const Text(
+        'Convocatorias',
+        style: TextStyle(
+          fontSize: 20.0,
+          color: Colors.white,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+      leading: IconButton(
+        icon: const Icon(
+          Icons.description_rounded,
+          color: Colors.white,
+          size: 35,
+        ),
+        onPressed: () {},
+      ),
       tileColor: const Color(0xff485378),
       onTap: () {
         Navigator.of(context)
