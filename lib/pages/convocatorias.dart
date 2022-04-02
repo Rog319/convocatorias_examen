@@ -17,7 +17,10 @@ class _ConvocatoriasState extends State<Convocatorias> {
         title: const Text('Convocatorias'),
         leading: const Drawer(
         backgroundColor: Color(0xff1b396a),
-        child: SideBar(),
+        child: Drawer(
+          backgroundColor: Color(0xff1b396a),
+          child: SideBar(),
+        ),
       ),
         backgroundColor: const Color(0xff1b396a),
       ),
