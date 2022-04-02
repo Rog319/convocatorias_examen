@@ -40,6 +40,8 @@ class _SideBarState extends State<SideBar> {
         onPressed: () {},
       ),
       tileColor: const Color(0xff485378),
+      selectedTileColor: Colors.blue,
+      selected: true,
       onTap: () {
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => Convocatorias()));
