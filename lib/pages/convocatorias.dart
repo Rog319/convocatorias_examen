@@ -1,5 +1,6 @@
 import 'package:examen_prueba01/pages/convocatoria.dart';
 import 'package:flutter/material.dart';
+import '/pages/sidebar.dart';
 
 class Convocatorias extends StatefulWidget {
   const Convocatorias({Key? key}) : super(key: key);
@@ -14,14 +15,10 @@ class _ConvocatoriasState extends State<Convocatorias> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Convocatorias'),
-        leading: IconButton(
-          icon: const Icon(
-            Icons.description_rounded,
-            color: Colors.white,
-            size: 35,
-          ),
-          onPressed: () {},
-        ),
+        leading: const Drawer(
+        backgroundColor: Color(0xff1b396a),
+        child: SideBar(),
+      ),
         backgroundColor: const Color(0xff1b396a),
       ),
       backgroundColor: const Color.fromARGB(255, 165, 169, 179),
