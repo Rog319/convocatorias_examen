@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ITE',
+      title: 'Instituto Tecnologico de Ensenada',
       theme: ThemeData(
         primaryColor: const Color(0xff1b396a),
       ),
