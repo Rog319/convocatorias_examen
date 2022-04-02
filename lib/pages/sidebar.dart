@@ -2,7 +2,7 @@ import 'package:examen_prueba01/pages/convocatorias.dart';
 import 'package:flutter/material.dart';
 
 class SideBar extends StatefulWidget {
-  SideBar({Key? key}) : super(key: key);
+  const SideBar({Key? key}) : super(key: key);
 
   @override
   State<SideBar> createState() => _SideBarState();
@@ -44,7 +44,7 @@ class _SideBarState extends State<SideBar> {
       selected: true,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => Convocatorias()));
+            .push(MaterialPageRoute(builder: (context) => const Convocatorias()));
       },
     );
   }

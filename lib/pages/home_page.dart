@@ -1,10 +1,8 @@
-import 'dart:io';
-
 import '/pages/sidebar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -18,8 +16,8 @@ class _HomePageState extends State<HomePage> {
         title: const Text('ITE'),
         backgroundColor: const Color(0xff1b396a),
       ),
-      drawer: Drawer(
-        backgroundColor: const Color(0xff1b396a),
+      drawer: const Drawer(
+        backgroundColor: Color(0xff1b396a),
         child: SideBar(),
       ),
       body: Container(
