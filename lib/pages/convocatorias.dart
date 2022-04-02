@@ -1,4 +1,4 @@
-import 'package:examen_prueba01/pages/convocatoria1.dart';
+import 'package:examen_prueba01/pages/convocatoria.dart';
 import 'package:flutter/material.dart';
 
 class Convocatorias extends StatefulWidget {
@@ -34,7 +34,7 @@ class _ConvocatoriasState extends State<Convocatorias> {
           ),
           child: Container(
             color: const Color.fromARGB(1, 72, 83, 120),
-            child: const Convocatoria1(),
+            child: const Convocatoria(),
           ),
         ),
       ),

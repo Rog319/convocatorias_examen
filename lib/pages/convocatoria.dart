@@ -1,13 +1,14 @@
+import 'package:examen_prueba01/pages/pdf.dart';
 import 'package:flutter/material.dart';
 
-class Convocatoria1 extends StatefulWidget {
-  const Convocatoria1({Key? key}) : super(key: key);
+class Convocatoria extends StatefulWidget {
+  const Convocatoria({Key? key}) : super(key: key);
 
   @override
-  State<Convocatoria1> createState() => _Convocatoria1State();
+  State<Convocatoria> createState() => _ConvocatoriaState();
 }
 
-class _Convocatoria1State extends State<Convocatoria1> {
+class _ConvocatoriaState extends State<Convocatoria> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -41,7 +42,10 @@ class _Convocatoria1State extends State<Convocatoria1> {
                             style: ElevatedButton.styleFrom(
                                 shape: const CircleBorder(),
                                 padding: const EdgeInsets.all(9)),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => const PDF()));
+                            },
                             child: const Icon(Icons.add, size: 40)),
                       )),
                 )
@@ -77,7 +81,10 @@ class _Convocatoria1State extends State<Convocatoria1> {
                               style: ElevatedButton.styleFrom(
                                   shape: const CircleBorder(),
                                   padding: const EdgeInsets.all(9)),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => const PDF()));
+                              },
                               child: const Icon(Icons.add, size: 40)),
                         )),
                   )
