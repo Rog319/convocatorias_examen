@@ -24,7 +24,7 @@ class _ConvocatoriaState extends State<Convocatoria> {
                 const Padding(
                   padding: EdgeInsets.all(30.0),
                   child: Text(
-                    'Convocatoria 1',
+                    'Convocatoria Somos el cambio',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
