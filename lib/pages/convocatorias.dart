@@ -1,4 +1,4 @@
-import 'package:examen_prueba01/pages/convocatoria.dart';
+import 'package:examen_prueba01/pages/convocatoria2.dart';
 import 'package:flutter/material.dart';
 import '/pages/sidebar.dart';
 
@@ -22,18 +22,8 @@ class _ConvocatoriasState extends State<Convocatorias> {
         child: SideBar(),
       ),
       backgroundColor: const Color.fromARGB(255, 165, 169, 179),
-      body: Center(
-        child: SingleChildScrollView(
-          physics: const AlwaysScrollableScrollPhysics(),
-          padding: const EdgeInsets.symmetric(
-            horizontal: 10,
-            vertical: 5,
-          ),
-          child: Container(
-            color: const Color.fromARGB(1, 72, 83, 120),
-            child: const Convocatoria(),
-          ),
-        ),
+      body: const Center(
+        child: Convocatoria2(),
       ),
     );
   }

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+// ignore: must_be_immutable
 class PDF extends StatefulWidget {
-  const PDF({Key? key}) : super(key: key);
+  String linkPdf;
+  // ignore: use_key_in_widget_constructors
+  PDF(this.linkPdf);
 
   @override
   State<PDF> createState() => _PDFState();
@@ -17,7 +20,7 @@ class _PDFState extends State<PDF> {
         title: const Text('Convocatoria 1'),
       ),
       body: SfPdfViewer.network(
-        'https://www.ensenada.tecnm.mx/wp-content/uploads/2022/01/109677-Convocatoria-SECJOVEN2022.pdf',
+        widget.linkPdf,
       ),
     );
   }
