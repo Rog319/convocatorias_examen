@@ -37,7 +37,7 @@ class _ConvocatoriaState extends State<Convocatoria> {
                       color: const Color(0xff1b396a),
                       child: Align(
                         //Alinearlo abajo a la derecha
-                        alignment: const Alignment(0.9, 0.9),
+                        alignment: const Alignment(0.95, 0.9),
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 shape: const CircleBorder(),
@@ -46,7 +46,7 @@ class _ConvocatoriaState extends State<Convocatoria> {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => const PDF()));
                             },
-                            child: const Icon(Icons.add, size: 40)),
+                            child: const Icon(Icons.arrow_forward, size: 25,)),
                       )),
                 )
               ]),
@@ -76,7 +76,7 @@ class _ConvocatoriaState extends State<Convocatoria> {
                         color: const Color(0xff1b396a),
                         child: Align(
                           //Alinearlo abajo a la derecha
-                          alignment: const Alignment(0.9, 0.9),
+                          alignment: const Alignment(0.95, 0.9),
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   shape: const CircleBorder(),
@@ -85,7 +85,7 @@ class _ConvocatoriaState extends State<Convocatoria> {
                                 Navigator.of(context).push(MaterialPageRoute(
                                     builder: (context) => const PDF()));
                               },
-                              child: const Icon(Icons.add, size: 40)),
+                              child: const Icon(Icons.arrow_forward, size: 25)),
                         )),
                   )
                 ]),

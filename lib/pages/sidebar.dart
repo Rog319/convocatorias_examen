@@ -1,4 +1,5 @@
 import 'package:examen_prueba01/pages/convocatorias.dart';
+import 'package:examen_prueba01/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class SideBar extends StatefulWidget {
@@ -33,12 +34,14 @@ class _SideBarState extends State<SideBar> {
               ),
               onPressed: () {},
             ),
-            tileColor: const Color(0xff485378),
-            selectedTileColor: const Color(0xff1b396a),
-            selected: true,
+            tileColor: const Color(0xff044b7f),
+            selectedTileColor: const Color(0xff485378),
+            selected: false,
             onTap: () {
 
-              Navigator.pop(context);
+              Navigator.of(context)
+                  .push(MaterialPageRoute(
+                  builder: (context) => const HomePage()));
             },
           ),
 
@@ -60,9 +63,9 @@ class _SideBarState extends State<SideBar> {
               ),
               onPressed: () {},
             ),
-            tileColor: const Color(0xff485378),
-            selectedTileColor: Colors.blue,
-            selected: true,
+            tileColor: const Color(0xff044b7f),
+            selectedTileColor: const Color(0xff485378),
+            selected: false,
             onTap: () {
               Navigator.of(context)
                   .push(MaterialPageRoute(

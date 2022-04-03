@@ -15,14 +15,11 @@ class _ConvocatoriasState extends State<Convocatorias> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Convocatorias'),
-        leading: const Drawer(
-        backgroundColor: Color(0xff1b396a),
-        child: Drawer(
-          backgroundColor: Color(0xff1b396a),
-          child: SideBar(),
-        ),
-      ),
         backgroundColor: const Color(0xff1b396a),
+      ),
+      drawer: const Drawer(
+        backgroundColor: Color(0xff1b396a),
+        child: SideBar(),
       ),
       backgroundColor: const Color.fromARGB(255, 165, 169, 179),
       body: Center(
