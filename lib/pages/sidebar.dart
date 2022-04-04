@@ -8,6 +8,7 @@ class SideBar extends StatefulWidget {
   @override
   State<SideBar> createState() => _SideBarState();
 }
+int control_pag = 0;
 
 class _SideBarState extends State<SideBar> {
   @override
@@ -38,10 +39,16 @@ class _SideBarState extends State<SideBar> {
             selectedTileColor: const Color(0xff485378),
             selected: false,
             onTap: () {
-
-              Navigator.of(context)
+              //Comprobación de pagina
+              if(control_pag != 0){
+                Navigator.of(context)
                   .push(MaterialPageRoute(
                   builder: (context) => const HomePage()));
+                  setState(() {
+                    control_pag =0;
+                  });
+
+              }
             },
           ),
 
@@ -67,9 +74,17 @@ class _SideBarState extends State<SideBar> {
             selectedTileColor: const Color(0xff485378),
             selected: false,
             onTap: () {
-              Navigator.of(context)
+              //comprobacion de pagina 
+              if(control_pag != 1){
+                Navigator.of(context)
                   .push(MaterialPageRoute(
                   builder: (context) => const Convocatorias()));
+                  setState(() {
+                    control_pag = 1;
+                  });
+
+              }
+              
             },
           ),
         ],
