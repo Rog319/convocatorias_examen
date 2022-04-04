@@ -52,7 +52,7 @@ class _Convocatoria2State extends State<Convocatoria2> {
           border: Border.all(color: Colors.black),
           borderRadius: BorderRadius.circular(15)),
       width: 700,
-      height: 300,
+      height: 425,
       margin: const EdgeInsets.all(15),
       padding: const EdgeInsets.all(5),
       child:
@@ -80,6 +80,12 @@ class _Convocatoria2State extends State<Convocatoria2> {
             ),
           ),
         ),
+        //Imagen de convocatoria
+        Padding(
+          padding: const EdgeInsets.all(3),
+          child: Image.asset('assets/img/Convocatoria01.png', ),
+        ),
+        
         //Boton para abrir PDF de la convocatoria
         Expanded(
           child: Container(
