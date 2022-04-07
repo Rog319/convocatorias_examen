@@ -22,6 +22,16 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Container(
         color: const Color.fromARGB(1, 72, 83, 120),
+        child: Expanded(
+          child: Column( mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            Image.asset('assets/img/logo.png', ),
+            Image.asset('assets/img/servicios.jpg', ),
+
+
+          ],
+
+          ),
+        )
       ),
     );
   }
